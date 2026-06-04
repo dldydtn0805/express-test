@@ -1,0 +1,23 @@
+{
+  "scripts": {
+    "build": "tsc",
+    "dev": "npm run build && node dist/src/index.js",
+    "start": "npm run build && node dist/src/index.js",
+    "seed": "npm run build && node dist/src/scripts.js",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@prisma/adapter-mariadb": "^7.8.0",
+    "@prisma/client": "^7.8.0",
+    "@types/express": "^5.0.6",
+    "dotenv": "^17.4.2",
+    "express": "^5.2.1",
+    "ts-node": "^10.9.2",
+    "typescript": "^6.0.3"
+  },
+  "devDependencies": {
+    "@types/node": "^25.9.1",
+    "prisma": "^7.8.0"
+  },
+  "type": "module"
+}
